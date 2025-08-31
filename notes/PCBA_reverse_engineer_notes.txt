@@ -1,0 +1,46 @@
+ PCB NOTES
+
+
+ Around the motor pin, there are the following IC's:
+ 
+ CM0109B - level shift IC?
+ 
+
+
+6 pin connector next to P50 pinout:
+
+
+1   3v3
+2   TCLK
+3   GND
+4   TMS
+5   RST
+6   TDO (probably TDI of PCB)
+
+
+
+mete@polarbear:~$ st-info --probe
+Found 1 stlink programmers
+  version:    V2J37S7
+  serial:     22002A00102D343632525544
+  flash:      524288 (pagesize: 16384)
+  sram:       131072
+  chipid:     0x431
+  dev-type:   STM32F411xC_xE
+
+
+doing st-flash read firmware.bin 0x08000000 0x10000
+did this to get the complete block 0. This is in the firmwre folder.
+
+ 
+
+
+ P400 connector pinout:
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 
